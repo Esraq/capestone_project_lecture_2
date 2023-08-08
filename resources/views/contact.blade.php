@@ -1,10 +1,11 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
 
-@section('content')
+<h1>I AM FROM contact PAGE</h1>
 
-
-
-<h1>I am from contact page</h1>
-
-
-@endsection
+</body>
+</html>

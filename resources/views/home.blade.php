@@ -1,882 +1,476 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.master')
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+@section('content')
 
-  <title>Digitf</title>
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="furniture.html"> Furniture </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
-              </li>
-            </ul>
-            <div class="user_option">
-              <a href="">
-                <img src="images/user.png" alt="">
-                <span>
-                  Login
-                </span>
-              </a>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
-          </div>
-          <div>
-            <div class="custom_menu-btn ">
-              <button>
-                <span class=" s-1">
-
-                </span>
-                <span class="s-2">
-
-                </span>
-                <span class="s-3">
-
-                </span>
-              </button>
-            </div>
-          </div>
-
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div class="play_btn">
-        <a href="">
-          <img src="images/play.png" alt="">
-        </a>
-      </div>
-      <div class="number_box">
-        <div>
-          <ol class="carousel-indicators indicator-2">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3">04</li>
-          </ol>
-        </div>
-      </div>
-      <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      The Latest
-                      <span>
-                        Furniture
-                      </span>
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="" class="btn-2">
-                        Contact us
-                      </a>
+<div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-bg-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Repair Service Center</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/carousel-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-6 img-container">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      The Latest
-                      <span>
-                        Furniture
-                      </span>
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="" class="btn-2">
-                        Contact us
-                      </a>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-bg-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Wash Service Center</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/carousel-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-6 img-container">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="carousel-item ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      The Latest
-                      <span>
-                        Furniture
-                      </span>
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="" class="btn-2">
-                        Contact us
-                      </a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Quality Servicing</h5>
+                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <a class="text-secondary border-bottom" href="">Read More</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-6 img-container">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      The Latest
-                      <span>
-                        Furniture
-                      </span>
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="" class="btn-2">
-                        Contact us
-                      </a>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex bg-light py-5 px-4">
+                        <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Expert Workers</h5>
+                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <a class="text-secondary border-bottom" href="">Read More</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-6 img-container">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Modern Equipment</h5>
+                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                            <a class="text-secondary border-bottom" href="">Read More</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- end slider section -->
-  </div>
-
-
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Us
-              </h2>
-
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+    <!-- Service End -->
 
-  <!-- end about section -->
 
-  <!-- trending section -->
-
-  <section class="trending_section layout_padding">
-    <div id="accordion">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  Trending Categories
-                </h2>
-              </div>
-              <div class="tab_container">
-                <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  <div class="number">
-                    <h5>
-                      01
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      Chairs
-                    </h5>
-                  </div>
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(0, 0, 0, .08);">
+                            <h1 class="display-4 text-white mb-0">15 <span class="fs-4">Years</span></h1>
+                            <h4 class="text-white">Experience</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="number">
-                    <h5>
-                      02
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      Tables
-                    </h5>
-                  </div>
+                <div class="col-lg-6">
+                    <h6 class="text-primary text-uppercase">// About Us //</h6>
+                    <h1 class="mb-4"><span class="text-primary">CarServ</span> Is The Best Place For Your Auto Care</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="row g-4 mb-3 pb-3">
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">01</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Professional & Expert</h6>
+                                    <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">02</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Quality Servicing Center</h6>
+                                    <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">03</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Awards Winning Workers</h6>
+                                    <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary py-3 px-5">Read More<i class="fa fa-arrow-right ms-3"></i></a>
                 </div>
-                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  <div class="number">
-                    <h5>
-                      03
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      Bads
-                    </h5>
-                  </div>
-                </div>
-                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseFour"
-                  aria-expanded="false" aria-controls="collapseFour">
-                  <div class="number">
-                    <h5>
-                      04
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      Furnitures
-                    </h5>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="images/t-1.jpg" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="images/t-2.jpg" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
-                  <div class="img-box">
-                    <img src="images/t-3.jpg" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="images/t-4.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="images/t-3.jpg" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="images/t-4.jpg" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
-
-                  <div class="img-box">
-                    <img src="images/t-1.jpg" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="images/t-2.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="images/t-4.jpg" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="images/t-1.jpg" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
-                  <div class="img-box">
-                    <img src="images/t-3.jpg" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="images/t-2.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="collapse" id="collapseFour" aria-labelledby="headingfour" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="images/t-1.jpg" alt="">
-                  </div>
-
-                  <div class="img-box">
-                    <img src="images/t-4.jpg" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
-                  <div class="img-box">
-                    <img src="images/t-3.jpg" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="images/t-2.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
         </div>
-      </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-fluid fact bg-dark my-5 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-check fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Years Experience</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Expert Technicians</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Satisfied Clients</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-car fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Compleate Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">// Our Services //</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav w-100 nav-pills me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <i class="fa fa-car-side fa-2x me-3"></i>
+                            <h4 class="m-0">Diagnostic Test</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <i class="fa fa-car fa-2x me-3"></i>
+                            <h4 class="m-0">Engine Servicing</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <i class="fa fa-cog fa-2x me-3"></i>
+                            <h4 class="m-0">Tires Replacement</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <i class="fa fa-oil-can fa-2x me-3"></i>
+                            <h4 class="m-0">Oil Changing</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-1.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-2.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-4.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">15 Years Of Experience In Auto Servicing</h3>
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-fluid bg-secondary booking my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 py-5">
+                    <div class="py-5">
+                        <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
+                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
+                        <h1 class="text-white mb-4">Book For A Service</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Request"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">// Our Technicians //</h6>
+                <h1 class="mb-5">Our Expert Technicians</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Full Name</h5>
+                            <small>Designation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-primary text-uppercase">// Testimonial //</h6>
+                <h1 class="mb-5">Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Client Name</h5>
+                    <p>Profession</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-  </section>
-
-  <!-- end trending section -->
-
-  <!-- discount section -->
-
-  <section class="discount_section  layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <h2>
-              The Latest Collection
-            </h2>
-            <h2 class="main_heading">
-              50% DISCOUNT
-            </h2>
-
-            <div class="">
-              <a href="">
-                Buy Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/discount-img.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
-  <!-- end discount section -->
 
-  <!-- brand section -->
-
-  <section class="brand_section">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Featured Brands
-        </h2>
-      </div>
-      <div class="brand_container layout_padding2">
-        <div class="box">
-          <a href="">
-            <div class="new">
-              <h5>
-                New
-              </h5>
-            </div>
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-      </div>
-      <a href="" class="brand-btn">
-        See More
-      </a>
-    </div>
-  </section>
-
-  <!-- end brand section -->
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding">
-    <div class="container ">
-      <div class="heading_container">
-        <h2 class="">
-          Contact Us
-        </h2>
-      </div>
-
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <form action="">
-            <div>
-              <input type="text" placeholder="Name" />
-            </div>
-            <div>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" placeholder="Phone" />
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="Message" />
-            </div>
-            <div class="d-flex ">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map-responsive">
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
-  <!-- client section -->
-  <section class="client_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="client_container layout_padding2">
-        <div class="client_box b-1">
-          <div class="client-id">
-            <div class="img-box">
-              <img src="images/client-1.png" alt="" />
-            </div>
-            <div class="name">
-              <h5>
-                Magna
-              </h5>
-              <p>
-                Consectetur adipiscing
-              </p>
-            </div>
-          </div>
-          <div class="detail">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
-            </p>
-            <div>
-              <div class="arrow_img">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="client_box b-2">
-          <div class="client-id">
-            <div class="img-box">
-              <img src="images/client-2.png" alt="" />
-            </div>
-            <div class="name">
-              <h5>
-                Aliqua
-              </h5>
-              <p>
-                Consectetur adipiscing
-              </p>
-
-            </div>
-          </div>
-          <div class="detail">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
-            </p>
-            <div>
-              <div class="arrow_img">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end client section -->
-
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="info_logo">
-        <h2>
-          Digitf
-        </h2>
-      </div>
-      <div class="row">
-
-        <div class="col-md-3">
-          <div class="info_contact">
-            <h5>
-              About Shop
-            </h5>
-            <div>
-              <div class="img-box">
-                <img src="images/location-white.png" width="18px" alt="">
-              </div>
-              <p>
-                Address
-              </p>
-            </div>
-            <div>
-              <div class="img-box">
-                <img src="images/telephone-white.png" width="12px" alt="">
-              </div>
-              <p>
-                +01 1234567890
-              </p>
-            </div>
-            <div>
-              <div class="img-box">
-                <img src="images/envelope-white.png" width="18px" alt="">
-              </div>
-              <p>
-                demo@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_info">
-            <h5>
-              Informations
-            </h5>
-            <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="info_insta">
-            <h5>
-              Instagram
-            </h5>
-            <div class="insta_container">
-              <div>
-                <a href="">
-                  <div class="insta-box b-1">
-                    <img src="images/i-1.jpg" alt="">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="insta-box b-2">
-                    <img src="images/i-2.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-
-              <div>
-                <a href="">
-                  <div class="insta-box b-3">
-                    <img src="images/i-3.jpg" alt="">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="insta-box b-4">
-                    <img src="images/i-4.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <div class="insta-box b-3">
-                    <img src="images/i-5.jpg" alt="">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="insta-box b-4">
-                    <img src="images/i-6.jpg" alt="">
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_form ">
-            <h5>
-              Newsletter
-            </h5>
-            <form action="">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                Subscribe
-              </button>
-            </form>
-            <div class="social_box">
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/youtube.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
-
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section ">
-    <div class="container">
-      <p>
-        &copy; 2019 All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </section>
-  <!-- end  footer section -->
-
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
-  </script>
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      navText: [],
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        420: {
-          items: 2
-        },
-        1000: {
-          items: 5
-        }
-      }
-
-    });
-  </script>
-  <script>
-    var nav = $("#navbarSupportedContent");
-    var btn = $(".custom_menu-btn");
-    btn.click
-    btn.click(function (e) {
-
-      e.preventDefault();
-      nav.toggleClass("lg_nav-toggle");
-      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
-    });
-  </script>
-  <script>
-    $('.carousel').on('slid.bs.carousel', function () {
-      $(".indicator-2 li").removeClass("active");
-      indicators = $(".carousel-indicators li.active").data("slide-to");
-      a = $(".indicator-2").find("[data-slide-to='" + indicators + "']").addClass("active");
-      console.log(indicators);
-
-    })
-  </script>
-
-</body>
-</body>
-
-</html>
+@endsection
